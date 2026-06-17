@@ -26,6 +26,9 @@ const sharedOptions = {
  */
 export function buildTheme(mode: ThemeMode): Theme {
   const isDark = mode === 'dark';
+  // Akcent dla tekstu/linków/przycisków tekstowych. Na ciemnym tle #2563EB
+  // nie spełnia kontrastu 4.5:1, dlatego używamy jaśniejszego błękitu.
+  const accent = isDark ? '#93C5FD' : '#2563EB';
 
   return createTheme({
     ...sharedOptions,
@@ -79,7 +82,16 @@ export function buildTheme(mode: ThemeMode): Theme {
         defaultProps: { disableElevation: true },
         styleOverrides: {
           root: { borderRadius: 10, paddingLeft: 20, paddingRight: 20 },
+          textPrimary: { color: accent },
+          outlinedPrimary: {
+            color: accent,
+            borderColor: isDark ? 'rgba(147,197,253,0.5)' : undefined,
+            '&:hover': { borderColor: accent },
+          },
         },
+      },
+      MuiLink: {
+        styleOverrides: { root: { color: accent } },
       },
       MuiPaper: {
         styleOverrides: { root: { backgroundImage: 'none' } },

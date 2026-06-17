@@ -97,6 +97,7 @@ bez dodatkowej konfiguracji przekierowań serwera.
 - **Responsive design** — układ siatkowy z breakpointami (`xs`/`sm`/`md`/`lg`) i płynną typografią `clamp()`.
 - **Formularze i walidacja** — rejestracja (RHF + Zod), czytelne komunikaty błędów, stany formularza.
 - **Dostępność (WCAG)** — semantyczny HTML, `aria-*`, skip link, widoczny fokus, kontrast AA, nawigacja klawiaturą.
+  Audyt **axe-core** dla wszystkich tras: **0 błędów krytycznych/poważnych** (skrypt: `node scripts/a11y.mjs` przy działającym `npm run preview`).
 - **State management** — Context API + useReducer; obsługa stanów `loading` · `success` · `error`.
 - **Integracja z API** — GET + POST/PUT/DELETE (JSONPlaceholder) z widoczną obsługą błędów sieciowych.
 - **Mikrointerakcje** — animacje przejść (Framer Motion), spinnery, snackbary z feedbackiem.
