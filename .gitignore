@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Skompilowane artefakty TS (tsc działa w trybie noEmit; bundluje Vite)
+src/**/*.js
+
 
 .vscode/*
 !.vscode/extensions.json
