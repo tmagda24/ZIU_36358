@@ -1,10 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// base: './' sprawia, że zasoby ładują się poprawnie niezależnie od ścieżki
-// wdrożenia (np. https://user.github.io/repo/) — działa na GH Pages, Netlify i Vercel.
 export default defineConfig({
-  base: './',
+  // Zaktualizowana ścieżka bazowa dla repozytorium ZIU_36358
+  base: '/ZIU_36358/',
   plugins: [react()],
   server: {
     port: 3000,

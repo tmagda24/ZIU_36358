@@ -3,9 +3,9 @@
 Aplikacja webowa do zarządzania zadaniami i projektami, zbudowana w React + Material UI.
 Projekt zrealizowany w ramach przedmiotu ZIU (projekt indywidualny, Lab 15).
 
-> 🔗 **Demo na żywo:** _[wstaw tutaj link do wdrożenia, np. https://twoj-login.github.io/taskflow/]_
+> 🔗 **Demo na żywo:** https://tmagda24.github.io/ZIU_36358/
 >
-> 📦 **Repozytorium:** _[wstaw tutaj link do publicznego repo GitHub]_
+> 📦 **Repozytorium:** https://github.com/tmagda24/ZIU_36358
 
 ---
 
@@ -60,8 +60,8 @@ Wymagania: **Node.js 18+** oraz npm.
 
 ```bash
 # 1. Sklonuj repozytorium
-git clone <adres-repozytorium>
-cd ZIU_36358-lab8
+git clone https://github.com/tmagda24/ZIU_36358.git
+cd ZIU_36358
 
 # 2. Zainstaluj zależności
 npm install
