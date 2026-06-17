@@ -2,7 +2,7 @@ name: Deploy Vite App to GitHub Pages
 
 on:
   push:
-    branches: ['master'] # Aktywuje się tylko po pushu na branch master
+    branches: ['master']
 
 permissions:
   contents: read
@@ -40,7 +40,7 @@ uses: actions/configure-pages@v4
 name: Upload artifact
 uses: actions/upload-pages-artifact@v3
 with:
-  path: './dist' # Folder, do którego Vite buduje projekt
+  path: './dist'
 name: Deploy to GitHub Pages
 id: deployment
 uses: actions/deploy-pages@v4
