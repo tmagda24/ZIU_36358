@@ -3,9 +3,9 @@
 Aplikacja webowa do zarządzania zadaniami i projektami, zbudowana w React + Material UI.
 Projekt zrealizowany w ramach przedmiotu ZIU (projekt indywidualny, Lab 15).
 
-> 🔗 **Demo na żywo:** _[wstaw tutaj link do wdrożenia, np. https://twoj-login.github.io/taskflow/]_
+> 🔗 **Demo na żywo:** https://tmagda24.github.io/ZIU_36358/
 >
-> 📦 **Repozytorium:** _[wstaw tutaj link do publicznego repo GitHub]_
+> 📦 **Repozytorium:** https://github.com/tmagda24/ZIU_36358/tree/ZIU_Projekt_Semestralny
 
 ---
 
@@ -89,21 +89,6 @@ Projekt działa na dowolnym hostingu statycznych plików (wynik builda trafia do
 Dzięki `HashRouter` i `base: './'` routing działa poprawnie na każdym z tych hostingów
 bez dodatkowej konfiguracji przekierowań serwera.
 
-## ✅ Realizacja kryteriów projektu
-
-- **Komponenty wielokrotnego użytku** — `ProjectCard`, `StatCard`, `TaskList`, `FilterBar`, `AddTodoForm`, layout (`Header`/`Footer`).
-- **Routing** — 5 widoków (React Router).
-- **Biblioteka UI** — Material UI + spójny motyw.
-- **Responsive design** — układ siatkowy z breakpointami (`xs`/`sm`/`md`/`lg`) i płynną typografią `clamp()`.
-- **Formularze i walidacja** — rejestracja (RHF + Zod), czytelne komunikaty błędów, stany formularza.
-- **Dostępność (WCAG)** — semantyczny HTML, `aria-*`, skip link, widoczny fokus, kontrast AA, nawigacja klawiaturą.
-  Audyt **axe-core** dla wszystkich tras: **0 błędów krytycznych/poważnych** (skrypt: `node scripts/a11y.mjs` przy działającym `npm run preview`).
-- **State management** — Context API + useReducer; obsługa stanów `loading` · `success` · `error`.
-- **Integracja z API** — GET + POST/PUT/DELETE (JSONPlaceholder) z widoczną obsługą błędów sieciowych.
-- **Mikrointerakcje** — animacje przejść (Framer Motion), spinnery, snackbary z feedbackiem.
-- **Deployment i dokumentacja** — konfiguracje wdrożeń + niniejszy README.
-
----
 
 ## 📝 Notatka UX
 
